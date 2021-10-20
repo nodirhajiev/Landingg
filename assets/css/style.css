@@ -236,11 +236,18 @@ body {
   color: #ffffff;
   margin-left: 10px;
 }
-.wrapper .banner .banner_contents .banner_pagination .page_prev {
-  width: 26.24px;
-  height: 18.45px;
-  left: 169.24px;
-  top: 374.45px;
+.wrapper .banner .banner_contents .banner_pagination .page_prev img svg {
   background: linear-gradient(90deg, #472297 0%, #7449d0 100%);
   transform: rotate(-180deg);
+}
+.wrapper .line {
+  position: relative;
+  height: 88px;
+  width: 100%;
+}
+.wrapper .line img {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
