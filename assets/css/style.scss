@@ -261,6 +261,16 @@ body {
           margin-left: 10px;
         }
       }
+      .banner_pagination {
+        .page_prev {
+          width: 26.24px;
+          height: 18.45px;
+          left: 169.24px;
+          top: 374.45px;
+          background: linear-gradient(90deg, #472297 0%, #7449d0 100%);
+          transform: rotate(-180deg);
+        }
+      }
     }
   }
 }
