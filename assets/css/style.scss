@@ -26,6 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -322,7 +323,6 @@ body {
 
   .bbl {
     .container {
-      overflow-x: hidden;
       .bbl_content {
         .bbl_title {
           h1 {
@@ -361,6 +361,7 @@ body {
               );
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+
               &:hover {
                 border-bottom: 1px solid #7449d0;
               }
