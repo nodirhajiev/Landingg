@@ -12,6 +12,11 @@ a {
   color: inherit;
 }
 
+// .container {
+//   margin-left: 58px;
+//   margin-right: 58px;
+// }
+
 ul,
 li {
   list-style: none;
@@ -24,8 +29,7 @@ body {
 }
 
 .wrapper {
-  //   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
 
   .container {
     margin: 58px;
@@ -48,7 +52,7 @@ body {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          left: 40.2%;
+          left: 50%;
           right: 42.97%;
           top: 0.35%;
           bottom: 98.89%;
@@ -56,7 +60,6 @@ body {
           margin-right: 10%;
 
           .award_text {
-            display: flex;
             p {
               font-style: normal;
               font-weight: normal;
@@ -275,13 +278,133 @@ body {
     position: relative;
     height: 88px;
     width: 100%;
+    display: flex;
+    align-items: center;
+
     img {
       position: absolute;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      width: 100%;
+      object-fit: cover;
+      margin-top: 30px;
     }
-    p {
+    .line_text {
+      display: flex;
+      margin-left: 62px;
+
+      p {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p:last-child {
+        margin-left: 10px;
+
+        &::before {
+          content: '*';
+          width: 10px;
+          height: 10px;
+          background-image: linear-gradient(90deg, #7449d0 0%, #7449d0 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border-radius: 2px;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .bbl {
+    .container {
+      overflow-x: hidden;
+      .bbl_content {
+        .bbl_title {
+          h1 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 43px;
+            text-transform: uppercase;
+            color: #7449d0;
+            margin-bottom: 21px;
+            margin-top: 60px;
+          }
+        }
+        .bbl_subtitle {
+          p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
+          .bbl_desc {
+            margin-top: 22px;
+            margin-bottom: 56px;
+            a {
+              font-style: normal;
+              font-weight: bold;
+              width: 255px;
+              height: 16px;
+              font-size: 16px;
+              line-height: 16px;
+              background-image: linear-gradient(
+                90deg,
+                #7449d0 0%,
+                #7449d0 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+        .bbl_results {
+          position: relative;
+          .result_content {
+            display: flex;
+            flex-direction: column;
+            width: 889px;
+            height: 333px;
+            background: #efebf8;
+            box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+            border-radius: 30px;
+            .result_box {
+              // position: absolute;
+              img {
+                border-radius: 20px;
+                border-radius: 30px 0px 0px 30px;
+                margin-right: 55px;
+              }
+            }
+            .result_box_text {
+              .box_text_title {
+                h2 {
+                  position: absolute;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 24px;
+                  line-height: 36px;
+                  text-transform: uppercase;
+                  color: #000000;
+                  margin-right: 44px;
+                }
+              }
+              .box_text_subtitle {
+                p {
+                  position: absolute;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
