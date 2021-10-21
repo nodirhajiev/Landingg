@@ -262,6 +262,10 @@ body {
           align-items: center;
           color: #ffffff;
           margin-left: 10px;
+
+          &:hover {
+            border-bottom: 1px solid white;
+          }
         }
       }
       .banner_pagination {
@@ -357,21 +361,28 @@ body {
               );
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+              &:hover {
+                border-bottom: 1px solid #7449d0;
+              }
             }
           }
         }
         .bbl_results {
-          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          margin-bottom: 50px;
           .result_content {
+            position: relative;
             display: flex;
-            flex-direction: column;
             width: 889px;
             height: 333px;
             background: #efebf8;
             box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
             border-radius: 30px;
+            margin-right: 31px;
             .result_box {
-              // position: absolute;
               img {
                 border-radius: 20px;
                 border-radius: 30px 0px 0px 30px;
@@ -381,7 +392,6 @@ body {
             .result_box_text {
               .box_text_title {
                 h2 {
-                  position: absolute;
                   font-style: normal;
                   font-weight: bold;
                   font-size: 24px;
@@ -389,16 +399,90 @@ body {
                   text-transform: uppercase;
                   color: #000000;
                   margin-right: 44px;
+                  margin-top: 58px;
+                  margin-bottom: 36px;
                 }
               }
               .box_text_subtitle {
+                width: 100%;
                 p {
-                  position: absolute;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
                   line-height: 24px;
                   color: #000000;
+                }
+              }
+            }
+          }
+
+          .register_box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 333px;
+            background: linear-gradient(90deg, #8e67e1 0%, #a58af1 100%);
+            box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+            border-radius: 30px;
+
+            .reg_title {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 27px;
+              text-align: center;
+              color: #ffffff;
+              margin-bottom: 62px;
+              margin-top: 24px;
+            }
+            h2 {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 24px;
+              text-align: center;
+              letter-spacing: 0.005em;
+              color: #ffffff;
+              margin-bottom: 20px;
+            }
+            .feedback_content {
+              width: 269px;
+              margin-top: 20px;
+              background: white;
+              border-radius: 61px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+
+              .feed_icon {
+                margin-left: 8px;
+                margin-top: 5px;
+
+                img {
+                  border-radius: 50%;
+                  padding: 10px 10px 5px;
+                  background: linear-gradient(
+                    90deg,
+                    #a791e2 1.32%,
+                    #7449d0 136.84%
+                  );
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+              }
+              p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(90deg, #472297 0%, #7449d0 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 10px;
+
+                &:hover {
+                  border-bottom: 1px solid #7449d0;
                 }
               }
             }
